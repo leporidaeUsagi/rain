@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>如何防治</title>
+	    <style type="text/css">
+	    	*{
+	    		padding: 0;
+	    		margin: 0;
+	    		width: 100%;
+	    		height: 100%;
+	    	}
+			body{
+		        background-image: url(img/city2.png);
+		        background-size:100vw 100vh;    
+		        background-repeat: no-repeat; 
+	      }
+	      .blackboard{
+	      	position: absolute;
+	      	height: 95vh;
+	      	width: 80vw; 
+	      	left: 11vw; 	
+	      }
+	      .blackboard p{
+	      	position: absolute;
+	      	height: 70vh;
+	      	width: 45vw;
+	      	top: 10vh;
+	      	left: 8vw; 
+	      	font-size:1.5rem;
+	      	color: white;
+	      	font-weight: bold;
+	      	
+	      	animation: fadeInAnimation ease 5s;
+			animation-iteration-count: 1; /*设置动画播放次数*/
+			animation-fill-mode: forwards; /*设置样式以在动画不播放时应用元素。forward是设置动画结束后，使用元素的结束属性值*/
+	      }
+	      @keyframes fadeInAnimation {
+			0%{
+				opacity: 0; /*设置不透明度*/
+			}
+			100%{			
+				opacity: 1;			
+			}			
+		  }
+		  a:link img{
+		  	position: relative;
+		  	width: 12vw;
+		  	height: 15vh;
+		  	display: block;
+		  }
+		  a:hover img{
+	        opacity:0.5;
+	      }
+	      
+	      .box{
+	      	position: relative;
+	      	width: 12vw;
+		  	height: 1vh;
+	      }
+	      
+	      .arrow{
+	      	height: 25vh;
+	      	width:15vh;
+	      	position: absolute;
+	      	top:10vh ;
+	      	left:70vw ;
+	      }
+		</style>
+		</head>
+		
+	<body>
+		<div class="blackboard">
+			<img src="img/bg3.png" />
+		</div>
+		
+		<div class="blackboard">
+		    <p>
+		    	<font size="8rem">如何防治<br/><br/></font>
+		    	<font color="chocolate">河南此次灾情使我国损失惨重，面对此类灾害的防治，我们可以做到以下几点：<br/><br/></font>
+		   		1.时刻注意天气预报咪，购买防洪保险、防灾基金<br/><br/>
+		   		2.修正排水设施，修建防水堤坝，建设雨水收集系统，提高植被覆盖率等等<br/>
+		   		
+		    </p>
+		    <div class="arrow">
+		    	<a href="guide2.html"  title="下一页"><img src="img/arrow2.png" /></a>
+			    <div class="box"> </div>
+			    <a href="guide1.html"  title="上一页"><img src="img/arrow1.png" /></a>
+		    </div>
+		    
+		</div>
+	</body>
+</html>
